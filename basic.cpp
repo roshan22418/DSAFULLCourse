@@ -139,6 +139,27 @@ void insertDigit(int n,vector<int> &ans){
     
     
 }
+
+
+int checkArraySorted(int *arr,int n,int index){
+    if (n==index)
+    {
+        return 1;   
+    }
+    if (n>index+1)
+    {
+        if (arr[index]>arr[index+1]){
+            return 0;
+            }
+        
+    }
+    checkArraySorted(arr,n,index+1);
+    
+   
+
+    
+    
+}
     
 
 
@@ -161,12 +182,14 @@ int main(){
     // }
     // everyElementDouble(array,n,0);
     // printArray(array,n,0);
-    vector<int> ans;
-    insertDigit(3456,ans);
-    for (int i = 0; i < ans.size(); i++)
-    {
-        cout<<ans[i]<<" ";
-    }
+    // vector<int> ans;
+    // insertDigit(3456,ans);
+    // for (int i = 0; i < ans.size(); i++)
+    // {
+    //     cout<<ans[i]<<" ";
+    // }
+    int array1[] = {0};
+    cout<<checkArraySorted(array1,0,0)<<endl;
     
     return 0;
 }
