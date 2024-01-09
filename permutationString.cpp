@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-void permutationOfstring(string str,int index){
+void permutationOfstring(string &str,int index){
     if(index>=str.length()){
         cout<<str<<" ";
         return;
@@ -10,13 +10,15 @@ void permutationOfstring(string str,int index){
     {
         swap(str[index],str[j]);
         permutationOfstring(str,index+1);
+        //backtracking because nullphy to change in back track
+        swap(str[index],str[j]);
     }
     
 
 }
 
 int main(){
-    string str = "abcder";
+    string str = "abc";
     int index = 0;
     permutationOfstring(str,index);
     return 0;
