@@ -10,7 +10,7 @@ void quicksort(int *arr, int start,int end){
     int j = start;
     while (j<pivot)
     {
-        if (arr[j]<arr[pivot])
+        if (arr[pivot]>arr[j])
         {
            i++;
            swap(arr[i],arr[j]);

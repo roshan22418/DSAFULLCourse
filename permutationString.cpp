@@ -18,7 +18,7 @@ void permutationOfstring(string &str,int index){
 }
 
 int main(){
-    string str = "abc";
+    string str = "abcdefgghiji";
     int index = 0;
     permutationOfstring(str,index);
     return 0;
