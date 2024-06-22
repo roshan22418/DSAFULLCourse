@@ -25,7 +25,7 @@ class Graph{
             for(auto it : adj[node]){
                 if (!visted[it])
                 {
-                    dfs(it,adj,ans,visted)   
+                    dfs(it,adj,ans,visted);   
                 }
                 
             }
@@ -43,6 +43,7 @@ class Graph{
 };
 
 int main(){
-    int visted[v]
+    int V = 3;
+    int visted[V];
     
 }
