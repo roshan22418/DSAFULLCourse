@@ -51,6 +51,7 @@ int binary_search1(int *arr, int target, int start,int end){
 int main(){
     int arr[] = {1,2,3,4,5,6,7,8,8};
     int target = 5;
+    int low = 0;
     int start = 0;
     int length = sizeof(arr)/sizeof(arr[0]);
     int end = length-1;
