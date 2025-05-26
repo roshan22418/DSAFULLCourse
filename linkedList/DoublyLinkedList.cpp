@@ -97,7 +97,7 @@ void DeleteLinkedList(Node* &head,int position){
         // head = head->next;
         // cout<<"delete the temp 3"<<endl;
         head->prev = NULL;
-        // cout<<"delete the temp 4"<<endl;  
+        // cout<<"delete 3the temp 4"<<endl;  
         delete temp;      
     }
     else if(position==length){
